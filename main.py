@@ -26,4 +26,6 @@ def aufgabe3():
     print(testListe[-3])
 
 # Aufgabe 4
-
+def aufgabe4():
+    value = sum(range(1,1001))
+    print(value)
