@@ -74,3 +74,11 @@ def aufgabe5():
     cv = CV()
     cv.buildCV(inputCV())
     cv.writeCV()
+
+if __name__ == "__main__":
+    # aufgabe1()
+    # aufgabe2()
+    # aufgabe3()
+    # aufgabe4()
+    # aufgabe5()
+    pass
