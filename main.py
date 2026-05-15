@@ -13,5 +13,8 @@ def aufgabe1():
     return restultString
 
 #Aufgabe 2
-
-
+def aufgabe2():
+    testListe = ["Eindeutig","Eindeutig","Eindeutig"]
+    print(testListe)
+    testSet = set(testListe)
+    print(testSet)
