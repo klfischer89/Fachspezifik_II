@@ -10,7 +10,7 @@ def aufgabe1():
     else:
         restultString = f"{value} is NOT part of the set!"
 
-    return restultString
+    print(restultString)
 
 # Aufgabe 2
 def aufgabe2():
