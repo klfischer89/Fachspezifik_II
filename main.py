@@ -12,9 +12,18 @@ def aufgabe1():
 
     return restultString
 
-#Aufgabe 2
+# Aufgabe 2
 def aufgabe2():
     testListe = ["Eindeutig","Eindeutig","Eindeutig"]
     print(testListe)
     testSet = set(testListe)
     print(testSet)
+
+# Aufgabe 3
+def aufgabe3():
+    testListe = [99, 53, 42, 1, 5, 16, 27]
+    testListe.sort()
+    print(testListe[-3])
+
+# Aufgabe 4
+
