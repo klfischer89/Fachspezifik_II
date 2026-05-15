@@ -50,14 +50,12 @@ class CV():
     def writeCV(self):
         
         cvString = (
-            #f"\033[32m"
             f"My CV:\n"
             f"Firstname: {self.firstname}\n"
             f"Lastname: {self.lastname}\n"
             f"Birthday: {self.birthday}\n"
             f"Address: {self.address}\n"
             f"Knowledge: {self.knowledge}"
-            #f"\033[0m"
         )
 
         with open("cv.txt", "w", encoding="utf-8") as f:
