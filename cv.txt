@@ -1,0 +1,6 @@
+My CV:
+Firstname: Bärbel
+Lastname: Bölle
+Birthday: 1887-05-13
+Address: Straße 33
+Knowledge: Nichts

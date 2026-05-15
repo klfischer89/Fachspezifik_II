@@ -48,17 +48,21 @@ class CV():
         self.knowledge = cvData.get("knowledge")
 
     def writeCV(self):
+        
         cvString = (
-            f"\033[32m"
+            #f"\033[32m"
             f"My CV:\n"
             f"Firstname: {self.firstname}\n"
             f"Lastname: {self.lastname}\n"
             f"Birthday: {self.birthday}\n"
             f"Address: {self.address}\n"
             f"Knowledge: {self.knowledge}"
-            f"\033[0m"
+            #f"\033[0m"
         )
-        return cvString
+
+        with open("cv.txt", "w", encoding="utf-8") as f:
+            f.write(cvString)
+        print("\033[32mCV created!\033[0m")
         
 def inputCV():
     cvData = {}
@@ -71,4 +75,4 @@ def inputCV():
 
 cv = CV()
 cv.buildCV(inputCV())
-print(cv.writeCV())
+cv.writeCV()
