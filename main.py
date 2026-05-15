@@ -1,4 +1,4 @@
-# Aufgabe 1:
+# Aufgabe 1: check for a value in a set
 def aufgabe1():
     # provide String fot the result
     restultString = ""
@@ -14,7 +14,7 @@ def aufgabe1():
 
     print(restultString)
 
-# Aufgabe 2
+# Aufgabe 2: remove duplicates
 def aufgabe2():
     # provide a list with duplicates
     testListe = ["Eindeutig","Eindeutig","Eindeutig"]
@@ -23,20 +23,20 @@ def aufgabe2():
     testSet = set(testListe)
     print(testSet)
 
-# Aufgabe 3
+# Aufgabe 3: output third highest number in a list
 def aufgabe3():
     # sort a list with numbers and print the third highest entry
     testListe = [99, 53, 42, 1, 5, 16, 27]
     testListe.sort()
     print(testListe[-3])
 
-# Aufgabe 4
+# Aufgabe 4: sum all numbers from 1 to 1000
 def aufgabe4():
     # sum numbers from 1 to 1000 and print it
     value = sum(range(1,1001))
     print(value)
 
-# Aufgabe 5
+# Aufgabe 5: create a CV
 import datetime
 def aufgabe5():
     #define a class CV with the needed attributes
