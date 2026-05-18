@@ -1,0 +1,21 @@
+<unternehmen>
+    <mitarbeiter id="101">
+        <name>
+            <vorname>Max</vorname>
+            <nachname>Mustermann</nachname>
+        </name>
+        <position>Softwareentwickler</position>
+        <abteilung>IT</abteilung>
+        <gehalt waehrung="EUR">55000</gehalt>
+    </mitarbeiter>
+
+    <mitarbeiter id="102">
+        <name>
+            <vorname>Anna</vorname>
+            <nachname>Schmidt</nachname>
+        </name>
+        <position>Projektmanagerin</position>
+        <abteilung>Management</abteilung>
+        <gehalt waehrung="EUR">65000</gehalt>
+    </mitarbeiter>
+</unternehmen>
