@@ -1,0 +1,5 @@
+2026-05-18 14:05:55,933 - Fehler aufgetreten: [Errno 2] No such file or directory: 'data/kunden1.csv'
+2026-05-18 14:51:06,644 - Fehler aufgetreten: 'firstname'
+2026-05-18 14:51:42,655 - Fehler aufgetreten: 'firs_tname'
+2026-05-18 15:20:48,481 - Fehler aufgetreten: no such column: cutomer_id
+2026-05-18 15:36:58,938 - Fehler aufgetreten: unsupported operand type(s) for |: 'str' and 'int'
