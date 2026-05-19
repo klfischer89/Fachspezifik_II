@@ -7,20 +7,20 @@ def daten_produzent():
     # Kafka-Server initialisieren
     produzent = KafkaProducer(bootstrap_server = ["localhost:9092"],                            # Adresse des Kafka-Server
                               api_versoin = (0,10,1),                                           # Sprache des Servers
-                              value_serializer = lambda wert:json.dumps(wert).encode("utf-8"))  # Umwandlung der Daten für die Übertragung
+                              value_serializer = lambda wert:json.dumps(wert).encode("utf-8"))  # Umwandlung der Daten für die Übertragung, Text --> Byte
     # Fehlerbehandlung
     try:
         for i in range(10):
             nachricht = {"id": i,
                          "name": f"name-{i}",
                          "wert": i*10}
-            produzent.send("datensynchornisation", value = nachricht)   # Nachrichten mit Topic "datensynchonisation senden"
+            produzent.send("datensynchronisation", value = nachricht)   # Nachrichten mit Topic "datensynchonisation" senden
             print(f"Gesendet: {nachricht}")
-            time.sleep(1)                                               # 1 Sekunde Pause zwischen dem senden
+            time.sleep(1)                                               # 1 Sekunde Pause zwischen dem Senden
         
     except Exception as fehler:
         print(f"Fehler beim Senden der Nachricht: {fehler}")
-    finally:
+    finally:                                                            # Wird immer ausgeführt, auch nach Exception
         produzent.flush()                                               # Alle Nachrichten die noch nicht gesendet wurden senden
         produzent.close(timeout = 5)                                    # Schließen nach 5 Sekunden
 
